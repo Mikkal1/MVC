@@ -1,0 +1,14 @@
+
+{{#if posts.length}}
+<section>
+  <h2>Your Posts</h2>
+    {{#each posts as |post|}}
+      {{> dashboard-postinfo post}}
+    {{/each}}
+
+</section>
+{{/if}}
+
+<center><a class="btn" href="/dashboard/new">+ New Post</a></center>
+
+<script src="/javascript/add-post.js"></script>
